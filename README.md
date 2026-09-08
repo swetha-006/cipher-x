@@ -64,7 +64,7 @@ SMS
                                   └── Related Evidence
 
 The system then presents these relationships through timelines, graphs, semantic retrieval and evidence-grounded AI responses.
-
+text```
 🎯 Problem Statement
 
 Modern cybercrime investigations may involve multiple heterogeneous sources:
