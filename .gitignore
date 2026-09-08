@@ -1,0 +1,9 @@
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.env
+backend/data/*.db
+backend/data/quarantine/
+backend/data/vault/
+frontend/dist/
