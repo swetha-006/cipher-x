@@ -51,32 +51,47 @@ Cybercrime investigations can involve large volumes of heterogeneous evidence di
 A single investigation may contain:
 
 ```text
-SMS / Chats
-      │
-      ├── Phone Numbers
-      │       │
-      │       ├── IMEI / SIM
-      │       ├── CDR
-      │       └── IP Metadata
-      │
-      ├── Transactions
-      │       │
-      │       └── Bank / UPI Accounts
-      │
-      ├── Screenshots
-      ├── Documents
-      └── Digital Logs
-```
+SMS
+ │
+ └── Phone Number
+        │
+        ├── IMEI
+        │
+        ├── CDR
+        │
+        └── IP Address
+                 │
+                 └── Transaction
+                         │
+                         └── Bank Account
+                                  │
+                                  └── Related Evidence
 
-These sources can contain:
+The system then presents these relationships through timelines, graphs, semantic retrieval and evidence-grounded AI responses.
 
-- duplicated information
-- conflicting timestamps
-- inconsistent locations
-- fragmented identities
-- disconnected transaction trails
-- incomplete relationships
-- contradictory device associations
+🎯 Problem Statement
+
+Modern cybercrime investigations may involve multiple heterogeneous sources:
+
+Call Detail Records (CDR)
+SMS/chat records
+Transaction records
+IP/device metadata
+IMEI/SIM information
+Email
+Screenshots
+Documents
+Web artifacts
+Digital logs
+
+These sources often exist in different formats and may contain:
+
+duplicated information
+conflicting timestamps
+inconsistent locations
+disconnected identities
+fragmented transaction trails
+incomplete relationships
 
 Manual cross-source correlation can therefore become time-consuming and error-prone.
 
@@ -1535,22 +1550,7 @@ SECURITY.md
 CONTRIBUTING.md
 
 docs/
-├── ARCHITECTURE.md
-├── THREAT_MODEL.md
-├── API.md
-└── RESEARCH_SCOPE.md
-```
-
----
-
-<p align="center">
-
-### CIPHER-X
-
-**Secure Evidence · Intelligent Correlation · Explainable Investigation**
-
-<br>
-
-<em>Research prototype for secure, explainable digital evidence intelligence.</em>
-
-</p>
+  ARCHITECTURE.md
+  THREAT_MODEL.md
+  API.md
+  RESEARCH_SCOPE.md
